@@ -1,0 +1,39 @@
+1) Blog about HTTP1.1 and HTTP2.0
+
+HTTP - Hyper Text Transfer Protocol
+HTTP is the method computers and servers use to request and send information and it has four versions - http0.9,http1.0,http1.1 and http2.0.
+now we are going to discuss about http1.1 and  http2.0
+
+HTTP1.0 - SIMPLE
+HTTP1.1 - REUSE
+HTTP2.0 - CONCURRENT
+
+HTTP1.1
+
+* The HTTP/1.1 standard was published only a few months after HTTP/1.0,yet a version change was necessary because many applications pronounced themselves “HTTP/1.0”,
+but they were not fully implemented.
+*http1.1 is are usable and editable
+
+SLOW PAGE LOADS LEADS TO
+*frustated Users
+*High Bounce Rates
+
+COMMON HTTP1.1
+*Domain shrading
+*Image sprites
+*Concatenation/Minification
+
+HTTP2.0
+
+*The HTTP 2.0 solves several problems that the creators of HTTP/1.1. HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.HTTP2.0 is concurrent.
+
+HTTP/2
+
+*Compress HTTP Headers
+*Allows Server Pushes
+*Enables Multiplexing
+
+Conclusion:
+HTTP/1.1 has served as the backbone of web communication for a long time, but with the growing complexity of web applications, HTTP/2.0 emerged to address its limitations. By introducing features such as multiplexing, server push, and improved header compression, HTTP/2.0 significantly enhances web performance, resulting in faster page load times
+
+REFERENCES - https://www.cloudflare.com/learning/performance/http2-vs-http1.1/
