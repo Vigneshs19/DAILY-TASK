@@ -13,3 +13,5 @@ WINDOW OBJECT
   3)Global objects,functions and variables of javascript are memeber of window object
   4)It represents a browser window or frame that displays the content of the webpage
   5)The Window is part of BOM not DOM
+
+REFERENCES - https://sushmithavootukuri.medium.com/difference-between-window-document-and-screen-in-javascript-757a65b25e9a
