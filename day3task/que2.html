@@ -17,7 +17,7 @@
       xhr.onload = function () {
         if (xhr.status === 200) {
           //Request was successful
-          console.log(xhr.responseText);
+          //console.log(xhr.responseText);
           var details = JSON.parse(xhr.responseText);
           for (var i = 0; i < arrObj.length; i++) {
             console.log(arrObj[i].flag);
