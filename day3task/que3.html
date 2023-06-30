@@ -20,7 +20,7 @@
           //Request was successful
           //console.log(xhr.responseText);
           var details = JSON.parse(xhr.responseText);
-          var arrObj = details.entries;
+          var arrObj = details;
           //   console.log(details.entries);
           for (var i = 0; i < arrObj.length; i++) {
             console.log(arrObj[i].names.common);
