@@ -4,7 +4,7 @@
   </head>
   <body>
     <script>
-      //Create a new XMLHttpRequest object
+    //Create a new XMLHttpRequest object
       var xhr = new XMLHttpRequest();
 
       //Define HTTP method and URL
@@ -20,14 +20,14 @@
           //Request was successful
           //console.log(xhr.responseText);
           var details = JSON.parse(xhr.responseText);
-          var arrObj = details;
-          //   console.log(details.entries);
-          for (var i = 0; i < arrObj.length; i++) {
-            console.log(arrObj[i].names);
-            console.log(arrObj[i].subregions);
-            console.log(arrObj[i].regions);
-            console.log(arrObj[i].populations);
+          var arrobj = details;
+          for (var i = 0;i < arrobj.length;i++) {
+            console.log(arrobj[i].names);
+            console.log(arrobj[i].subregion);
+            console.log(arrobj[i].regions);
+            console.log(arrobj[i].populations);
           }
+          
         } else {
           //Request failed
           console.log("Request failed", xhr.status);
