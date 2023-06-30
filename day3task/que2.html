@@ -20,7 +20,7 @@
           //Request was successful
           //console.log(xhr.responseText);
           var details = JSON.parse(xhr.responseText);
-          var arrobj = details.entries;
+          var arrobj = details;
           for (var i = 0;i < arrobj.length;i++) {
             console.log(arrobj[i].flag);
           }
