@@ -1,0 +1,31 @@
+const data = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Using 'for' loop
+console.log("Using 'for' loop:");
+for (let key in data) {
+  console.log(key + ": " + data[key]);
+}
+
+// Using 'for...in' loop
+console.log("Using 'for...in' loop:");
+for (let key in data) {
+  if (data.hasOwnProperty(key)) {
+    console.log(key + ": " + data[key]);
+  }
+}
+
+// Using 'for...of' loop 
+console.log("Using 'for...of' loop:");
+for (let [key, value] of Object.entries(data)) {
+  console.log(key + ": " + value);
+}
+
+// Using 'forEach' loop 
+console.log("Using 'forEach' loop:");
+Object.keys(data).forEach(key => {
+  console.log(key + ": " + data[key]);
+});
