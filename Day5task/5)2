@@ -1,0 +1,29 @@
+{
+  "name": "Vignesh",
+  "title": "Software Engineer",
+  "contact": {
+    "email": "postbox19042000@gmail.com",
+    "phone": "+91 123-456-7890",
+    "address": "123 Main Street, Chennai, Madurai"
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "university": "Anna University",
+      "year": "2023"
+    }
+  ],
+  "experience": [
+    {
+      "position": "No experience"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Python",
+    "React",
+    "Node.js",
+    "HTML/CSS",
+    "Git"
+  ]
+}
