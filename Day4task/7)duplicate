@@ -1,0 +1,10 @@
+var duplicate = [1,1,2,2,3,3,4];
+(function(array){
+                        let dup = [...new Set(array)];
+                        console.log(dup);
+                      }
+                      (duplicate));
+IIFE :                (function(array){
+                        let dup = [...new Set(array)];
+                        console.log(dup);
+                       })([1,1,2,3,4])
