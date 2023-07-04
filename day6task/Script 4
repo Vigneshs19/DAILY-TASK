@@ -1,0 +1,10 @@
+class uberprice{
+  constructor(travelfee,conveniencefee,tax){
+    this.travelfee = travelfee;
+    this.conveniencefee = conveniencefee;
+    this.tax = tax;
+    this.total = travelfee+conveniencefee+tax;
+}
+}
+const res = new uberprice(200,15,20);
+console.log(res.total);
