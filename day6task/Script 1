@@ -1,0 +1,32 @@
+
+//a)
+class movie{
+  constructor(title,studio,rating){
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+var res = new movie("daredevil","avmstudio","R")
+//b)
+class movies{
+  constructor(title,studio,rating="PG"){
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}
+var res1 = new movies("blackadam","dcstudio")
+//c
+class Movie {
+  constructor(title,studio,rating){
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+  static getPG(movies) {
+    return movies.filter(movie => movie.rating === "PG");
+  }
+}
+//d
+var newmovie =new Movie("casinoroyale","eon productions","PG=13");
