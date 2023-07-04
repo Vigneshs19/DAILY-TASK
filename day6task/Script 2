@@ -1,0 +1,11 @@
+class circle{
+  constructor(radius,color){
+    this.radius = radius;
+    this.color = color;
+  }
+
+getArea(){
+  return pi * radius * radius;
+}
+}
+var res = new circle("1.0","red");
