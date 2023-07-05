@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Array Functions Example</title>
@@ -5,16 +6,19 @@
 <body>
   <script>
     var request = new XMLHttpRequest();
-request.open("GET", "https://restcountries.com/v3.1/all");
-request.send();
-request.onload = function(){
-    var result = JSON.parse(request.response);
-    console.log(result);
-  countries.forEach(country =>{
-    console.log('name:'country.name.common):
-    console.log('capital:'country.capital);
-    console.log('flag:'country.flag);
-  }});
+    request.open("GET", "https://restcountries.com/v3.1/all");
+    request.send();
+    request.onload = function(){
+      var result = JSON.parse(request.response);
+      var countries = result;
+      console.log(countries);
+      
+      countries.forEach(country => {
+        console.log('Name:', country.name.common);
+        console.log('Capital:', country.capital);
+        console.log('Flag:', country.flags.svg);
+      });
+    };
   </script>
 </body>
 </html>
