@@ -12,8 +12,8 @@
       var result = JSON.parse(request.response);
       var countries = result;
       console.log(countries);
-      var totalPopulation = countries.reduce((acc, country) => acc + country.population, 0);
-      console.log('Total population:', totalPopulation);
+      var res = countries.reduce((acc, country) => acc + country.population, 0);
+      console.log(res);
     };
   </script>
 </body>
