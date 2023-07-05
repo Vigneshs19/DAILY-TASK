@@ -1,4 +1,10 @@
-var request = new XMLHttpRequest();
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+         var request = new XMLHttpRequest();
 request.open("GET", "https://restcountries.com/v3.1/all");
 request.send();
 request.onload = function(){
@@ -8,3 +14,7 @@ request.onload = function(){
     var res = result.filter((ele)=>ele.population<100000);
     console.log(res);
 }
+      //send the reques
+    </script>
+  </body>
+</html>
