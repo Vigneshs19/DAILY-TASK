@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Array Functions Example</title>
+</head>
+<body>
+  <script>
+    var request = new XMLHttpRequest();
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send();
+request.onload = function(){
+    var result = JSON.parse(request.response);
+    console.log(result);
+  countries.forEach(country =>{
+    console.log('name:'country.name.common):
+    console.log('capital:'country.capital);
+    console.log('flag:'country.flag);
+  })
+  </script>
+</body>
+</html>
