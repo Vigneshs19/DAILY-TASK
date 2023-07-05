@@ -12,7 +12,7 @@
       var result = JSON.parse(request.response);
       var countries = result;
       console.log(countries);
-      var res = countries.reduce((acc,population)=>acc+population);
+      var res = countries.reduce((acc,population)=>acc+country.population);
       console.log(res);
     };
   </script>
