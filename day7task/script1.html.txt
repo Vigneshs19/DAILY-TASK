@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+       var request = new XMLHttpRequest();
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send();
+
+request.onload = function () {
+  var result = JSON.parse(request.response);
+  console.log(result);
+
+  // Population is less than 2 lakhs
+  var res = result.filter((ele) => ele.population < 200000);
+  console.log(res);
+};
+
+      //send the request
+    </script>
+  </body>
+</html>
