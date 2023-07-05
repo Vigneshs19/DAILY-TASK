@@ -12,7 +12,7 @@
       var result = JSON.parse(request.response);
       var countries = result;
       console.log(countries);
-      var res = countries.filter((ele)=>ele.country.currency.USD);
+      var res = countries.filter((ele)=>ele.country.currencies.USD);
       console.log(res);
     };
   </script>
