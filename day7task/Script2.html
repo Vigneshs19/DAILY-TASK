@@ -4,16 +4,16 @@
   </head>
   <body>
     <script>
-       var request = new XMLHttpRequest();
+     var request = new XMLHttpRequest();
 request.open("GET", "https://restcountries.com/v3.1/all");
 request.send();
 
-request.onload = function () {
-  var result = JSON.parse(request.response);
-  console.log(result);
-  var res = result.filter((ele) => ele.continent === "Asia");
-  console.log(res);
+request.onload = function(){
+    var result = JSON.parse(request.response);
+    var asiaCountries = result.filter((country) => country.region === "Asia" || country.continent === "Asia");
+    console.log(asiaCountries);
 };
+
 
       //send the reques
     </script>
