@@ -10,7 +10,7 @@ request.send();
 
 request.onload = function(){
     var result = JSON.parse(request.response);
-    var asiaCountries = result.filter((country) => country.region === "Asia" || country.continent === "Asia");
+    var asiaCountries = result.filter((country) => country.continent === "Asia");
     console.log(asiaCountries);
 };
 
